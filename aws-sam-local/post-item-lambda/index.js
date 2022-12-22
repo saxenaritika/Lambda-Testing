@@ -2,7 +2,7 @@ const AWS = require("aws-sdk");
 require('dotenv').config()
 
 const dynamo = new AWS.DynamoDB.DocumentClient({endpoint: process.env.DB_ENDPOINT});
-console.log(process.env.DB_ENDPOINT, "hello");
+
 exports.handler = async (event) => {
 
 	let response = {

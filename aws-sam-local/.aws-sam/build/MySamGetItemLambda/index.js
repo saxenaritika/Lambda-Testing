@@ -12,12 +12,12 @@ exports.handler = async () => {
 	try {
 		response.body = await scanTable();
 
-		console.log("response", response);
+
 
 		console.log("Success: Everything executed correctly");
 	} catch (err) {
 		console.error("error happened:", err);
-		console.log("inside catch");
+		
 		response.body = err;
 	}
 
